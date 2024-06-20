@@ -70,6 +70,10 @@ jobs:
       with:
         name: bicep-template
         path: bicep-template
+
+    - name: Pre login
+      run: az login
+
         
    #Login in your azure subscription using a service principal (credentials stored as GitHub Secret in repo)
     - name: Azure Login
